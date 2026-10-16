@@ -32,3 +32,7 @@ Para generar la versión final para publicar: `npm run build` (queda en `dist/`)
 - Sucursales, horarios y correo (`contacto.html`, `partials/pie.html`).
 - Sistema de rastreo (hoy `rastreo.html` es una demostración con la guía ZLT-260412).
 - Testimonios reales (`index.html`).
+
+## Logos de tiendas
+
+Están en `public/tiendas/` (Amazon, eBay, Walmart, AliExpress, Nike y Target, tomados de Simple Icons). Para Shein, Temu, Best Buy y Mercado Libre guarda el logo oficial como `shein.svg`, `temu.svg`, `bestbuy.svg` y `mercadolibre.svg` en esa carpeta; mientras no existan, el sitio muestra el nombre.
