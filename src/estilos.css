@@ -240,3 +240,31 @@ td.num { font-family: var(--f-dato); }
 .declaracion p { font-family: var(--f-titulo); font-size: clamp(1.2rem, 2.2vw, 1.5rem); line-height: 1.45; font-weight: 600; color: var(--marca); text-wrap: pretty; }
 .valores { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 12px; }
 .valores li { background: var(--superficie); border: 1px solid var(--linea); border-left: 4px solid var(--acento); border-radius: 8px; padding: 14px 20px; font: 700 1.05rem/1.2 var(--f-titulo); color: var(--marca); }
+
+/* Animaciones al pasar el mouse */
+:root { --suave: 220ms cubic-bezier(.2,.7,.3,1); }
+.boton, .acceso, .origen, .tiendas li, .tiendas img, .valores li, .servicio, .testimonios blockquote,
+.menu a, .pie a, .flotante, .acceso .ir, .preguntas summary, .preguntas details, .logo img {
+  transition: transform var(--suave), box-shadow var(--suave), background-color var(--suave),
+              border-color var(--suave), color var(--suave), opacity var(--suave), filter var(--suave);
+}
+.boton:hover { transform: translateY(-2px); box-shadow: 0 8px 18px rgba(0,29,69,0.18); }
+.boton:active { transform: translateY(0); box-shadow: none; }
+.acceso:hover, .origen:hover, .servicio:hover, .testimonios blockquote:hover { transform: translateY(-4px); box-shadow: 0 14px 30px rgba(0,29,69,0.12); border-color: var(--marca); }
+.acceso:hover .ir { transform: translateX(4px); color: var(--acento-boton); }
+.acceso .ir { display: inline-block; }
+.tiendas li:hover { transform: translateY(-3px); box-shadow: 0 10px 24px rgba(0,29,69,0.1); border-color: var(--acento); }
+.tiendas li:hover img { transform: scale(1.08); }
+.valores li:hover { transform: translateY(-2px); background: var(--fondo-suave); }
+.menu a:not(.boton) { position: relative; }
+.menu a:not(.boton)::after { content: ""; position: absolute; left: 12px; right: 12px; bottom: 4px; height: 2px; background: var(--acento); transform: scaleX(0); transform-origin: left; transition: transform var(--suave); }
+.menu a:not(.boton):hover::after, .menu a[aria-current="page"]::after { transform: scaleX(1); }
+.logo:hover img { transform: scale(1.03); }
+.pie a:hover { color: var(--acento); opacity: 1; text-decoration: none; }
+.flotante:hover { transform: translateY(-3px) scale(1.04); box-shadow: 0 14px 30px rgba(0,0,0,0.3); }
+.preguntas details:hover { border-color: var(--marca); }
+.preguntas summary:hover { color: var(--acento-boton); }
+.guia { transition: transform 400ms cubic-bezier(.2,.7,.3,1); }
+.guia:hover { transform: rotate(0deg) scale(1.02); }
+@media (hover: none) { .acceso:hover, .origen:hover, .servicio:hover, .tiendas li:hover, .testimonios blockquote:hover { transform: none; } }
+@media (prefers-reduced-motion: reduce) { *, *::after { transition: none !important; } .boton:hover, .acceso:hover, .origen:hover, .servicio:hover, .tiendas li:hover, .flotante:hover, .guia:hover { transform: none; } }
