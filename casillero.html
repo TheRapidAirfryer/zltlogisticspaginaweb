@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<link rel="icon" type="image/png" href="/logo.png">
+<title>Casillero en EE.UU. | ZLT Logistics</title>
+<meta name="description" content="Obtén gratis tu dirección en Miami para comprar en línea y recibir en Honduras.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=JetBrains+Mono:wght@400;600;700&family=Source+Sans+3:wght@400;600;700&display=swap">
+<link rel="stylesheet" href="/src/estilos.css">
+</head>
+<body>
+<!-- @include cabecera -->
+<main>
+<section class="cabeza-pagina"><div class="envoltura">
+<span class="etiqueta">Casillero</span><h1>Tu dirección en Estados Unidos, gratis</h1><p>Con tu casillero ZLT compras en cualquier tienda de EE.UU. como si vivieras allá. Nosotros recibimos, consolidamos y te lo enviamos a Honduras.</p></div></section>
+<section class="banda"><div class="envoltura dos-col">
+<div style="display:grid;gap:18px">
+<span class="etiqueta">Así se ve tu dirección</span>
+<h2>Úsala como dirección de envío en tu tienda</h2>
+<p style="color:var(--tenue)">Tu código ZLT identifica tus paquetes en bodega. Escríbelo siempre en la línea 2 de la dirección.</p>
+<div class="direccion">
+<span><b>Nombre:</b> Tu nombre completo</span>
+<span><b>Dirección 1:</b> 0000 NW 00th St</span>
+<span><b>Dirección 2:</b> ZLT-10245</span>
+<span><b>Ciudad:</b> Miami</span>
+<span><b>Estado:</b> FL &nbsp; <b>ZIP:</b> 33100</span>
+<span><b>Teléfono:</b> (305) 000-0000</span>
+</div>
+<p class="aviso">Dirección de ejemplo. La dirección real de bodega se agregará cuando ZLT la confirme.</p>
+</div>
+<div class="tarjeta" id="registro">
+<h2>Crea tu casillero</h2>
+<p>Llena tus datos y te enviaremos tu código ZLT por WhatsApp.</p>
+<form class="formulario" data-whatsapp="Hola ZLT, quiero crear mi casillero.">
+<div class="campo"><label for="reg-nombre">Nombre completo</label><input id="reg-nombre" name="nombre" data-rotulo="Nombre" autocomplete="name" required></div>
+<div class="fila-campos">
+<div class="campo"><label for="reg-dni">Número de identidad</label><input id="reg-dni" name="dni" data-rotulo="Identidad" inputmode="numeric" placeholder="0801-1990-00000"></div>
+<div class="campo"><label for="reg-tel">Teléfono / WhatsApp</label><input id="reg-tel" name="tel" data-rotulo="Teléfono" type="tel" placeholder="9999-9999"></div>
+</div>
+<div class="campo"><label for="reg-correo">Correo electrónico</label><input id="reg-correo" name="correo" data-rotulo="Correo" type="email" autocomplete="email"></div>
+<div class="fila-campos">
+<div class="campo"><label for="reg-ciudad">Ciudad</label><select id="reg-ciudad" name="ciudad" data-rotulo="Ciudad"><option>Tegucigalpa</option><option>San Pedro Sula</option><option>La Ceiba</option><option>Choluteca</option><option>Comayagua</option><option>Otra</option></select></div>
+<div class="campo"><label for="reg-entrega">Prefiero recibir en</label><select id="reg-entrega" name="entrega" data-rotulo="Entrega"><option>Mi casa u oficina</option><option>Sucursal ZLT</option></select></div>
+</div>
+<div class="campo"><label for="reg-dir">Dirección en Honduras</label><textarea id="reg-dir" name="direccion" data-rotulo="Dirección" rows="2"></textarea></div>
+<button class="boton boton--marca" type="submit">Revisar mis datos</button>
+<a class="boton boton--acento" data-enlace target="_blank" rel="noopener" href="#">Enviar por WhatsApp</a>
+<small style="color:var(--tenue)">Tus datos se usan solo para tu casillero y el trámite de aduana.</small>
+</form>
+</div>
+</div></section>
+
+<section class="banda banda--blanca"><div class="envoltura">
+<div class="intro"><span class="etiqueta">Beneficios</span><h2>Qué incluye tu casillero</h2></div>
+<div class="rejilla">
+<div class="tarjeta"><h3>Sin costo de afiliación</h3><p>Solo pagas por libra cuando tu paquete viaja.</p></div>
+<div class="tarjeta"><h3>Aviso en cada etapa</h3><p>Te escribimos cuando llega a bodega, cuando sale y cuando está listo.</p></div>
+<div class="tarjeta"><h3>Consolidación</h3><p>Juntamos varias compras en un solo envío para que pagues menos.</p></div>
+<div class="tarjeta"><h3>Trámite de aduana</h3><p>Nos encargamos del desaduanaje. Tú solo recibes.</p></div>
+</div>
+</div></section>
+</main>
+<!-- @include pie -->
+<script type="module" src="/src/sitio.js"></script>
+</body>
+</html>

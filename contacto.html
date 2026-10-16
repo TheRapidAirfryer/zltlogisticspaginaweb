@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<link rel="icon" type="image/png" href="/logo.png">
+<title>Contacto | ZLT Logistics</title>
+<meta name="description" content="Escríbenos por WhatsApp o visítanos en nuestras sucursales en Honduras.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=JetBrains+Mono:wght@400;600;700&family=Source+Sans+3:wght@400;600;700&display=swap">
+<link rel="stylesheet" href="/src/estilos.css">
+</head>
+<body>
+<!-- @include cabecera -->
+<main>
+<section class="cabeza-pagina"><div class="envoltura">
+<span class="etiqueta">Contacto</span><h1>Hablemos de tu envío</h1><p>La forma más rápida de contactarnos es por WhatsApp. También puedes dejarnos tu mensaje aquí.</p></div></section>
+<section class="banda"><div class="envoltura dos-col">
+<div style="display:grid;gap:20px">
+<div class="tarjeta"><span class="etiqueta">WhatsApp</span><h3>+504 8894-7017</h3><p>Respuesta en horario de atención.</p><div class="botones"><a class="boton boton--marca" href="https://wa.me/50488947017" target="_blank" rel="noopener">Abrir WhatsApp</a></div></div>
+<div class="tarjeta"><span class="etiqueta">Correo</span><h3 style="user-select:all">info@zltlogistics.com</h3></div>
+<div class="tarjeta"><span class="etiqueta">Sucursales</span><h3>Tegucigalpa y San Pedro Sula</h3><p>Direcciones, mapas y horarios pendientes de confirmar con ZLT.</p><p>Lunes a viernes 8:00–17:00 · Sábado 8:00–12:00</p></div>
+</div>
+<div class="tarjeta">
+<h2>Envíanos un mensaje</h2>
+<form class="formulario" data-whatsapp="Hola ZLT, les escribo desde el sitio web.">
+<div class="campo"><label for="c-nombre">Nombre</label><input id="c-nombre" name="nombre" data-rotulo="Nombre" autocomplete="name"></div>
+<div class="campo"><label for="c-tel">Teléfono</label><input id="c-tel" name="tel" data-rotulo="Teléfono" type="tel" placeholder="9999-9999"></div>
+<div class="campo"><label for="c-tema">Tema</label><select id="c-tema" name="tema" data-rotulo="Tema"><option>Cotización</option><option>Estado de un paquete</option><option>Envío aéreo</option><option>Envío marítimo</option><option>Otro</option></select></div>
+<div class="campo"><label for="c-msj">Mensaje</label><textarea id="c-msj" name="mensaje" data-rotulo="Mensaje" rows="4"></textarea></div>
+<button class="boton boton--marca" type="submit">Revisar mensaje</button>
+<a class="boton boton--acento" data-enlace target="_blank" rel="noopener" href="#">Enviar por WhatsApp</a>
+</form>
+</div>
+</div></section>
+</main>
+<!-- @include pie -->
+<script type="module" src="/src/sitio.js"></script>
+</body>
+</html>

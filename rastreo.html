@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<link rel="icon" type="image/png" href="/logo.png">
+<title>Rastrear paquete | ZLT Logistics</title>
+<meta name="description" content="Consulta el estado de tu paquete con tu número de guía ZLT.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=JetBrains+Mono:wght@400;600;700&family=Source+Sans+3:wght@400;600;700&display=swap">
+<link rel="stylesheet" href="/src/estilos.css">
+</head>
+<body>
+<!-- @include cabecera -->
+<main>
+<section class="cabeza-pagina"><div class="envoltura">
+<span class="etiqueta">Rastreo</span><h1>¿Dónde está mi paquete?</h1><p>Escribe tu número de guía ZLT o el tracking de la tienda para ver en qué etapa va tu envío.</p></div></section>
+<section class="banda"><div class="envoltura" style="display:grid;gap:24px;max-width:820px">
+<form class="buscador" id="rastreo">
+<label for="guia" class="etiqueta" style="flex-basis:100%">Número de guía</label>
+<input id="guia" name="guia" placeholder="ZLT-000000" autocomplete="off">
+<button class="boton boton--marca" type="submit">Rastrear</button>
+</form>
+<p class="aviso">Vista de demostración con la guía ZLT-260412. El rastreo real se conectará cuando ZLT tenga su sistema de gestión de paquetes.</p>
+<div id="rastreo-resultado"></div>
+</div></section>
+</main>
+<!-- @include pie -->
+<script type="module" src="/src/sitio.js"></script>
+</body>
+</html>
