@@ -29,7 +29,7 @@ Para generar la versión final para publicar: `npm run build` (queda en `dist/`)
 
 - Tarifas por libra (en `src/sitio.js`, `TARIFAS`, y la tabla de `tarifas.html`).
 - Dirección de la bodega en Miami (`casillero.html`).
-- Dirección, horarios y correo (`contacto.html`, `partials/pie.html`); hoy no se menciona ninguna sucursal.
+- Dirección, horarios y correo (`contacto.html`, `partials/pie.html`). Sucursal confirmada: San Pedro Sula (falta la dirección exacta).
 - Sistema de rastreo (hoy `rastreo.html` es una demostración con la guía ZLT-260412).
 - Testimonios reales (`index.html`).
 

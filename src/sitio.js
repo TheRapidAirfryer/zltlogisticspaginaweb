@@ -61,13 +61,13 @@ function enlaceWhatsApp(texto) {
   var salida = document.getElementById("rastreo-resultado");
   var DEMO = {
     "ZLT-260412": {
-      origen: "Miami, FL", destino: "Tegucigalpa", peso: "4.2 lb", estado: "En aduana",
+      origen: "Miami, FL", destino: "San Pedro Sula", peso: "4.2 lb", estado: "En aduana",
       eventos: [
         ["hecho", "08 oct 2026 · 10:14", "Recibido en bodega Miami"],
         ["hecho", "09 oct 2026 · 18:40", "Salió de Miami en vuelo consolidado"],
         ["hecho", "10 oct 2026 · 07:05", "Llegó a Honduras"],
         ["actual", "10 oct 2026 · 09:30", "En proceso de aduana"],
-        ["", "", "Listo para entrega"]
+        ["", "", "Listo para entrega o retiro en sucursal San Pedro Sula"]
       ]
     }
   };
