@@ -67,7 +67,7 @@ function enlaceWhatsApp(texto) {
         ["hecho", "09 oct 2026 · 18:40", "Salió de Miami en vuelo consolidado"],
         ["hecho", "10 oct 2026 · 07:05", "Llegó a Honduras"],
         ["actual", "10 oct 2026 · 09:30", "En proceso de aduana"],
-        ["", "", "Listo para entrega o retiro en sucursal"]
+        ["", "", "Listo para entrega"]
       ]
     }
   };
